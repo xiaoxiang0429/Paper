@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.tianzhen.android.test.paper.view.AutoScrollViewPager
+        android:id="@+id/viewPager1"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+        android:id="@+id/btn_company"
+        android:layout_width="0dp"
+        android:text="企业"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btn_person"
+            android:layout_width="0dp"
+            android:text="个人"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btn_product"
+            android:layout_width="0dp"
+            android:text="产品"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btn_sdi"
+            android:layout_width="0dp"
+            android:text="供求"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:id="@+id/imgheadlines"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img_headlines"/>
+        <TextView
+            android:id="@+id/tv_headline1"
+            android:layout_marginTop="4dp"
+            android:textSize="12sp"
+            android:layout_toRightOf="@id/imgheadlines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="九月份节日较多"
+            />
+        <TextView
+            android:id="@+id/tv_headline2"
+            android:layout_marginBottom="4dp"
+            android:layout_alignParentBottom="true"
+            android:textSize="12sp"
+            android:layout_toRightOf="@id/imgheadlines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="九月份节日较多"
+            />
+    </RelativeLayout>
+
+    <com.tianzhen.android.test.paper.view.AutoScrollViewPager
+        android:id="@+id/viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最新供求信息"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_sd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
